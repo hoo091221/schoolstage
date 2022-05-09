@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+	</head>
+	<body style="font-family: 'Jua', sans-serif;">
+		<style>
+			a {
+				text-decoration: none;
+				color: black;
+				font-size: 1.5vw;
+				margin: 2vw;
+			}
+			::-webkit-scrollbar {
+				display: none;
+			}
+			button {
+				text-decoration: none;
+				color: black;
+				font-size: 1.5vw;
+				margin: 2vw;
+				font-family: 'Jua', sans-serif;
+			}
+		</style>
+		<center>
+			<button
+				id="j"
+				style="
+					color: #0000cf;
+					font-size: 5vw;
+					background-color: #fff;
+					border: 0px;
+					outline: 0px;
+				"
+				onclick="alert('아 진짜 몇번을 누르는거야');"
+				style="font-size: 5vw;"
+			>
+				진맵이
+			</button>
+			<h6>스테이지 5</h6>
+			<img
+				style="width: 40vw;"
+				src="http://ok1472.com/web/product/big/201811/defbaee19201da10644ad43fd8ce5022.jpg"
+			/>
+			<h3 id="z">
+				<span style="color: red;">진</span>라면 <span style="color: red;">매운</span>맛
+			</h3>
+		</center>
+		<center>
+			<h1>내 이름은 뭘까요?</h1>
+			<input
+				id="input"
+				type="string"
+				style="width: 50vw; height: 20vh; border-radius: 5vw; text-align: center;"
+			/>
+			<button id="btn" style="border: 0px;padding: 2vw; border-radius: 1vw; background-color: #FFF000;">
+				제출하기
+			</button>
+		</center>
+		<center>
+			<a href="https://www.youtube.com/watch?v=xCXxFAnzXn4">진라면 광고 보러 가기</a>
+			<a href="https://www.youtube.com/watch?v=Y9PqQbiPlOY">기적의검 광고 듣기</a>
+		</center>
+		<script>
+			$('#btn').on('click', function () {
+				const name = document.getElementById('input').value;
+				const name1 = document.getElementById('j');
+				if (name == '진순이') {
+					location.href = 'stage6.html';
+				} else {
+					alert('나 진맵이 아닌데ㅋㅋㅋ');
+				}
+			});
+			document.addEventListener('keydown', checkKeyPressed, false);
+
+			function checkKeyPressed(e) {
+				if (e.keyCode === 65) {
+					document.getElementById('z').innerHTML =
+						"<span style='color: red'>진</span>라면 <span style='color: red'>순</span>한맛";
+					document.getElementById('j').innerHTML = '진순이';
+				}
+			}
+		</script>
+	</body>
+</html>
