@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Jua', sans-serif;">
+<style>
+a {
+text-decoration: none;
+color: black;
+font-size: 1.5vw;
+margin: 2vw;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+button {
+text-decoration: none;
+color: black;
+font-size: 1.5vw;
+margin: 2vw;
+font-family: 'Jua', sans-serif;
+}
+</style>
+<center>
+<button style="color: #FF1E9D;font-size: 5vw;background-color: #fff;border: 0px;outline: 0px;" onclick="alert('이걸 또 누르냐;;');" style="font-size: 5vw;">마법소녀 영서</button>
+<h6>스테이지 3</h6>
+<img style="width: 40vw" src="a/youngseo.png"/>
+</center>
+<center>
+<button onclick="music();">마법소녀 영서의 마법 주문 듣기</button>
+<a href="https://www.youtube.com/watch?v=3-sgMAiFQcU&list=PLa2FVrgwv10urti7cam6ehBfb9sx1GQtD">기적의검 광고 듣기</a>
+<button onclick="music1();">기적의검 광고 듣기2</button>
+<a style="font-size: 20vw;margin-left: 200vw;" href="stage4.html">!</a>
+</center>
+<script>
+function music() {
+var audio = new Audio('a/youngseo.m4a');
+audio.play();
+}
+
+function music1() {
+var audio = new Audio('a/ad.m4a');
+audio.play();
+}
+</script>
+</body>
+</html>
